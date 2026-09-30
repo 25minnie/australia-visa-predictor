@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>澳大利亚签证指南 · 材料清单与风险自测</title>
+<meta name="description" content="赴澳旅游/探亲/商务一站式指南：签证简介、2026最新材料清单（可打勾记录）、30秒风险自测。">
+<style>
+  :root{
+    --bg:#eef5f9; --card:#ffffff; --ink:#1e293b; --muted:#64748b; --line:#e2e8f0;
+    --primary:#0e7490; --primary-deep:#155e75; --primary-light:#ecfeff;
+    --green:#059669; --green-bg:#ecfdf5; --green-line:#a7f3d0;
+    --yellow:#d97706; --yellow-bg:#fffbeb; --yellow-line:#fde68a;
+    --red:#dc2626; --red-bg:#fef2f2; --red-line:#fecaca;
+    --radius:14px; --shadow:0 1px 3px rgba(15,23,42,.07),0 6px 20px rgba(15,23,42,.06);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",sans-serif;
+    background:var(--bg);color:var(--ink);font-size:15px;line-height:1.7}
+  .wrap{max-width:980px;margin:0 auto;padding:0 16px}
+
+  /* ===== Hero ===== */
+  .hero{background:transparent;color:var(--ink);padding:38px 0 64px}
+  .hero .wrap{position:relative;z-index:1}
+  .hero-kicker{display:inline-block;font-size:12.5px;letter-spacing:2px;background:#e0f2fe;
+    border:1px solid #bae6fd;color:#0369a1;padding:4px 13px;border-radius:999px;margin-bottom:14px}
+  .hero h1{font-size:clamp(23px,4.5vw,34px);font-weight:800;letter-spacing:1px;margin-bottom:8px;color:var(--primary-deep)}
+  .hero .sub{font-size:14.5px;color:var(--muted);max-width:620px}
+  .hero-chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+  .hero-chips .chip{background:#fff;border:1px solid var(--line);border-radius:10px;
+    padding:6px 13px;font-size:13px;font-weight:600;cursor:pointer;transition:.15s;font-family:inherit;color:var(--ink);box-shadow:var(--shadow)}
+  .hero-chips .chip:hover{background:var(--primary-light);border-color:#7dd3fc;color:var(--primary-deep)}
+
+  /* ===== ETA 横幅 ===== */
+  .eta-banner{margin-top:-34px;position:relative;z-index:2}
+  .eta-card{background:linear-gradient(100deg,#065f46,#059669);color:#fff;border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:15px 18px;display:flex;gap:13px;align-items:flex-start}
+  .eta-card .icon{font-size:26px;line-height:1.2;flex-shrink:0}
+  .eta-card b{font-size:14.5px}
+  .eta-card p{font-size:13px;opacity:.95;margin-top:2px}
+  .eta-card .tag{display:inline-block;font-size:11px;background:rgba(255,255,255,.2);border-radius:6px;
+    padding:1px 8px;margin-left:6px;vertical-align:1px}
+
+  /* ===== Tabs ===== */
+  .tabs{position:sticky;top:0;z-index:10;background:rgba(238,245,249,.95);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);margin-top:18px}
+  .tabs .wrap{display:flex;gap:6px;overflow-x:auto}
+  .tab-btn{flex:1;min-width:118px;border:none;background:none;font-family:inherit;font-size:14.5px;font-weight:700;
+    color:var(--muted);padding:13px 8px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;transition:.15s}
+  .tab-btn:hover{color:var(--primary)}
+  .tab-btn.on{color:var(--primary);border-bottom-color:var(--primary)}
+
+  main{padding:20px 0 34px}
+  .panel{display:none;animation:fadeIn .3s ease}
+  .panel.on{display:block}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+  .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+  .card+.card{margin-top:16px}
+  .card h2{font-size:18px;font-weight:800;display:flex;align-items:center;gap:8px}
+  .card h3{font-size:15px;font-weight:700}
+  .card .lead{color:var(--muted);font-size:13.5px;margin:4px 0 14px}
+
+  /* ===== 简介tab ===== */
+  .intro-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  @media (max-width:640px){.intro-grid{grid-template-columns:1fr}}
+  .fact{background:var(--primary-light);border:1px solid #cffafe;border-radius:12px;padding:14px 15px}
+  .fact .f-t{font-weight:700;font-size:14px;color:var(--primary-deep)}
+  .fact .f-d{font-size:12.8px;color:#0e7490;margin-top:2px}
+  .purpose-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:6px}
+  @media (max-width:640px){.purpose-cards{grid-template-columns:1fr}}
+  .pcard{border:1.5px solid var(--line);border-radius:12px;padding:15px;transition:.15s}
+  .pcard:hover{border-color:var(--primary)}
+  .pcard .p-emoji{font-size:24px}
+  .pcard b{display:block;font-size:14.5px;margin:6px 0 3px}
+  .pcard p{font-size:12.5px;color:var(--muted)}
+  .pcard .note{display:inline-block;margin-top:7px;font-size:11.5px;border-radius:6px;padding:2px 8px}
+  .note-ok{background:var(--green-bg);color:var(--green)}
+  .note-warn{background:var(--yellow-bg);color:var(--yellow)}
+
+  details{border:1.5px solid var(--line);border-radius:12px;margin-top:10px;background:#fff;overflow:hidden}
+  details[open]{border-color:#a5d8e8}
+  summary{list-style:none;cursor:pointer;padding:13px 16px;font-weight:700;font-size:14px;display:flex;
+    align-items:center;gap:8px;user-select:none}
+  summary::-webkit-details-marker{display:none}
+  summary .arr{margin-left:auto;transition:.2s;color:var(--muted);font-size:12px}
+  details[open] summary .arr{transform:rotate(180deg)}
+  .faq-body{padding:0 16px 14px;font-size:13.5px;color:#334155}
+
+  /* ===== 材料清单tab ===== */
+  .doc-progress{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin-bottom:16px}
+  .dp-row{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;font-weight:700}
+  .dp-row .count{color:var(--primary);font-size:15px}
+  .dp-bar{height:9px;background:#e2e8f0;border-radius:99px;margin-top:9px;overflow:hidden}
+  .dp-fill{height:100%;width:0%;border-radius:99px;background:linear-gradient(90deg,#0891b2,#059669);transition:width .3s}
+  .dp-hint{font-size:12px;color:var(--muted);margin-top:8px}
+  .doc-group{margin-top:12px}
+  .doc-group summary .cnt{font-weight:600;color:var(--muted);font-size:12px;margin-left:4px}
+  .doc-list{padding:4px 14px 14px;display:grid;gap:9px}
+  .doc-item{display:flex;gap:11px;align-items:flex-start;border:1.5px solid var(--line);border-radius:11px;
+    padding:11px 13px;cursor:pointer;transition:.15s;background:#fff}
+  .doc-item:hover{border-color:#a5d8e8}
+  .doc-item input{display:none}
+  .doc-item .box{width:21px;height:21px;border-radius:7px;border:2px solid #cbd5e1;flex-shrink:0;margin-top:2px;
+    display:flex;align-items:center;justify-content:center;font-size:13px;color:#fff;transition:.15s;background:#fff}
+  .doc-item input:checked+.box{background:var(--green);border-color:var(--green)}
+  .doc-item input:checked~.doc-text{opacity:.55;text-decoration:line-through}
+  .doc-item .doc-text b{font-size:13.8px;display:block}
+  .doc-item .doc-text span{font-size:12.3px;color:var(--muted);display:block;margin-top:1px}
+  .badge-mini{display:inline-block;font-size:10.5px;font-weight:700;border-radius:5px;padding:1px 7px;margin-left:6px;vertical-align:1.5px}
+  .bm-need{background:var(--red-bg);color:var(--red)}
+  .bm-opt{background:#f1f5f9;color:var(--muted)}
+  .bm-nz{background:#ede9fe;color:#7c3aed}
+  .notice{border-radius:12px;padding:13px 16px;font-size:12.8px;border:1px solid}
+  .notice-red{background:var(--red-bg);border-color:var(--red-line);color:#7f1d1d}
+  .notice-blue{background:var(--primary-light);border-color:#cffafe;color:#155e75}
+
+  /* ===== 出签贴士tab ===== */
+  .alert-card{background:linear-gradient(100deg,#991b1b,#dc2626);color:#fff;border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:16px 18px;display:flex;gap:13px;align-items:flex-start;margin-bottom:16px}
+  .alert-card .icon{font-size:26px;line-height:1.2;flex-shrink:0}
+  .alert-card b{font-size:14.5px}
+  .alert-card p{font-size:13px;opacity:.96;margin-top:2px}
+  .tip-entry{display:flex;gap:12px;padding:14px 15px;border:1.5px solid var(--line);border-radius:12px;background:#fff}
+  .tip-entry+.tip-entry{margin-top:10px}
+  .tip-entry .te-no{width:30px;height:30px;border-radius:9px;background:var(--primary-light);color:var(--primary-deep);
+    display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;flex-shrink:0}
+  .tip-entry .te-body b{font-size:14px;display:block;margin-bottom:3px}
+  .tip-entry .te-body span{font-size:12.8px;color:#475569;display:block;line-height:1.7}
+  .tip-entry .te-body span b{display:inline;font-size:12.8px;color:#0f172a}
+  .check-list{list-style:none;display:grid;gap:9px}
+  .check-list li{display:flex;gap:9px;font-size:13px;color:#334155;align-items:flex-start}
+  .check-list li .ck{color:var(--green);font-weight:800;flex-shrink:0}
+  /* ===== 拒签红旗自检 ===== */
+  .rf-list{display:grid;gap:9px;margin-top:4px}
+  .rf-item{display:flex;gap:10px;padding:11px 13px;border:1.5px solid var(--line);border-radius:11px;background:#fff;cursor:pointer;align-items:flex-start;transition:border-color .15s,background .15s}
+  .rf-item:hover{border-color:#fca5a5}
+  .rf-item input{display:none}
+  .rf-item .rf-box{width:20px;height:20px;border-radius:6px;border:1.5px solid #cbd5e1;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:transparent;background:#fff;margin-top:2px;transition:all .15s}
+  .rf-item input:checked ~ .rf-box{background:var(--red);border-color:var(--red);color:#fff}
+  .rf-item .rf-t b{font-size:13.3px;display:block;line-height:1.5}
+  .rf-item .rf-t span{font-size:12.2px;color:#64748b;display:block;line-height:1.6;margin-top:2px}
+  .rf-item input:checked ~ .rf-t b{color:#991b1b}
+  .rf-result{margin-top:12px;border-radius:12px;padding:13px 15px;font-size:12.8px;line-height:1.7;display:none}
+  .rf-result.show{display:block}
+  .rf-result.bad{background:var(--red-bg);border:1px solid var(--red-line);color:#7f1d1d}
+  .rf-result.ok{background:var(--green-bg);border:1px solid var(--green-line);color:#14532d}
+  .rf-result ul{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:9px}
+  .region-warn{margin-top:12px;background:#fff7ed;border:1px solid #fed7aa;border-radius:11px;padding:11px 13px;font-size:12.5px;color:#9a3412;line-height:1.65}
+  /* ===== 材料项行动按钮 ===== */
+  .doc-actions{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+  .doc-btn{display:inline-flex;align-items:center;gap:5px;padding:7px 14px;border-radius:9px;font-size:12.3px;font-weight:700;
+    border:1.5px solid var(--primary);color:var(--primary);background:#fff;text-decoration:none;cursor:pointer;transition:all .15s}
+  .doc-btn:hover{background:var(--primary-light)}
+  .doc-btn.primary{background:var(--primary);color:#fff}
+  .doc-btn.primary:hover{background:var(--primary-deep);border-color:var(--primary-deep)}
+
+  /* ===== 自测tab ===== */
+  .quiz-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:16px;align-items:start}
+  @media (max-width:860px){.quiz-layout{grid-template-columns:1fr}}
+  .q-field{margin-bottom:17px}
+  .q-field label{display:block;font-size:13.5px;font-weight:700;color:#334155;margin-bottom:8px}
+  .q-field label .q-no{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;
+    background:var(--primary);color:#fff;border-radius:6px;font-size:11.5px;margin-right:6px}
+  .seg{display:flex;gap:8px;flex-wrap:wrap}
+  .seg button{flex:1;min-width:70px;padding:9px 8px;border:1.5px solid var(--line);background:#fff;border-radius:10px;
+    font-size:13.5px;font-weight:600;color:#475569;cursor:pointer;transition:.15s;font-family:inherit}
+  .seg button:hover{border-color:#7dd3fc}
+  .seg button.on{background:var(--primary-light);border-color:var(--primary);color:var(--primary-deep)}
+  select{width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;font-size:14px;
+    font-family:inherit;background:#fff;color:var(--ink)}
+  select:focus{outline:none;border-color:var(--primary)}
+  .birth-warn{margin-top:9px;background:var(--yellow-bg);border:1px solid var(--yellow-line);border-radius:10px;
+    padding:9px 12px;font-size:12.3px;color:#92400e;line-height:1.6}
+  .opt-cards{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  @media (max-width:480px){.opt-cards{grid-template-columns:1fr}}
+  .oc{border:1.5px solid var(--line);border-radius:11px;padding:10px 12px;cursor:pointer;transition:.15s;background:#fff}
+  .oc:hover{border-color:#7dd3fc}
+  .oc.on{border-color:var(--primary);background:var(--primary-light)}
+  .oc .ot{font-weight:700;font-size:13.5px}
+  .oc .od{font-size:11.8px;color:var(--muted);margin-top:2px}
+
+  .result-card{position:sticky;top:64px}
+  @media (max-width:860px){.result-card{position:static}}
+  .ring-wrap{display:flex;justify-content:center;margin:6px 0 2px}
+  .ring-box{position:relative;width:158px;height:158px}
+  .ring-box svg{width:100%;height:100%;transform:rotate(-90deg)}
+  .ring-bg{fill:none;stroke:#e2e8f0;stroke-width:11}
+  .ring-val{fill:none;stroke:var(--primary);stroke-width:11;stroke-linecap:round;transition:stroke-dashoffset .5s,stroke .3s}
+  .ring-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .ring-center .rc-num{font-size:38px;font-weight:800;line-height:1}
+  .ring-center .rc-cap{font-size:11.5px;color:var(--muted);margin-top:3px}
+  .band-line{text-align:center;margin-top:4px}
+  .band-badge{display:inline-block;font-size:14px;font-weight:800;padding:7px 18px;border-radius:999px}
+  .band-green{background:var(--green-bg);color:var(--green);border:1.5px solid var(--green-line)}
+  .band-yellow{background:var(--yellow-bg);color:var(--yellow);border:1.5px solid var(--yellow-line)}
+  .band-red{background:var(--red-bg);color:var(--red);border:1.5px solid var(--red-line)}
+  .band-wait{background:#f1f5f9;color:var(--muted);border:1.5px dashed #cbd5e1}
+  .band-desc{text-align:center;font-size:12.8px;color:var(--muted);margin-top:8px;padding:0 8px}
+  .dims{margin-top:15px;display:flex;flex-direction:column;gap:7px}
+  .dim{display:flex;align-items:center;gap:9px;font-size:12.8px}
+  .dim .name{width:72px;color:#475569;font-weight:600;flex-shrink:0}
+  .dim .bar{flex:1;height:7px;background:#eef2f7;border-radius:99px;overflow:hidden}
+  .dim .fill{height:100%;border-radius:99px;background:var(--primary);transition:width .3s}
+  .dim .fill.neg{background:var(--red)}
+  .dim .val{width:40px;text-align:right;font-weight:700;font-size:12px;flex-shrink:0}
+  .tips{margin-top:15px}
+  .tips h3{font-size:13.5px;margin-bottom:9px}
+  .tips ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+  .tips li{font-size:12.8px;line-height:1.65;padding:10px 13px;border-radius:10px;border:1px solid}
+  .tip-red{background:var(--red-bg);border-color:var(--red-line)}
+  .tip-yellow{background:var(--yellow-bg);border-color:var(--yellow-line)}
+  .tip-green{background:var(--green-bg);border-color:var(--green-line)}
+  .tips li b{display:block;margin-bottom:1px}
+  .go-docs{display:block;width:100%;margin-top:15px;padding:11px;border-radius:10px;border:none;cursor:pointer;
+    background:var(--primary);color:#fff;font-size:13.8px;font-weight:700;font-family:inherit;transition:.15s}
+  .go-docs:hover{background:var(--primary-deep)}
+  .quiz-note{font-size:11.5px;color:var(--muted);margin-top:11px;text-align:center}
+
+  footer{background:#0f172a;color:#94a3b8;text-align:center;padding:26px 18px;font-size:12.5px}
+  footer .motto{color:#e2e8f0;font-size:14px;font-weight:700;letter-spacing:1px;margin-bottom:7px}
+  footer .small{font-size:11px;opacity:.7;margin-top:6px}
+
+  @media print{
+    body{background:#fff}
+    .hero,.tabs,.go-docs{display:none !important}
+    .panel{display:block !important}
+    .card,.doc-progress{box-shadow:none;border:1px solid #ddd}
+    .result-card{position:static}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-kicker">🇦🇺 澳大利亚 · 新西兰</div>
+    <h1>澳大利亚签证指南</h1>
+    <p class="sub">计划去澳大利亚旅游、探亲或商务？3 分钟看懂签证要点、备齐材料、自测申请把握——开始您的南半球之旅。</p>
+    <div class="hero-chips">
+      <button class="chip" type="button" data-goto="quiz">🎯 风险自测</button>
+      <button class="chip" type="button" data-goto="intro">📖 了解签证</button>
+      <button class="chip" type="button" data-goto="docs">📋 材料清单</button>
+      <button class="chip" type="button" data-goto="tips">📌 出签贴士</button>
+    </div>
+  </div>
+</header>
+
+<!-- ETA 新政横幅 -->
+<div class="eta-banner wrap">
+  <div class="eta-card">
+    <div class="icon">🇳🇿</div>
+    <div>
+      <b>顺路去新西兰？ETA 新政提示<span class="tag">政策期至 2026 年 11 月</span></b>
+      <p>根据最新政策，从澳洲前往新西兰的旅客现可凭 <b>ETA（电子旅行许可）</b>出行，无需另行办理纸质签证。适用条件与办理细节请以新西兰移民局最新公布为准，欢迎联系我们为您确认。</p>
+    </div>
+  </div>
+</div>
+
+<nav class="tabs">
+  <div class="wrap">
+    <button class="tab-btn on" type="button" data-tab="quiz">🎯 风险自测</button>
+    <button class="tab-btn" type="button" data-tab="intro">📖 签证简介</button>
+    <button class="tab-btn" type="button" data-tab="docs">📋 材料清单</button>
+    <button class="tab-btn" type="button" data-tab="tips">📌 出签贴士</button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- ================= Tab 1 风险自测 ================= -->
+  <section class="panel on" id="panel-quiz">
+    <div class="quiz-layout">
+      <div class="card">
+        <h2>📝 告诉我您的情况</h2>
+        <p class="lead">7 道选择题，约 30 秒完成。数据仅在本机计算，不会上传，请放心填写。</p>
+
+        <div class="q-field">
+          <label><span class="q-no">1</span>出行目的</label>
+          <div class="seg" id="segPurpose">
+            <button type="button" data-v="tour" class="on">✈️ 旅游</button>
+            <button type="button" data-v="visit">👨‍👩‍👧 探亲</button>
+            <button type="button" data-v="business">💼 商务</button>
+          </div>
+        </div>
+
+        <div class="q-field">
+          <label><span class="q-no">2</span>婚姻状况</label>
+          <div class="seg" id="segMarriage">
+            <button type="button" data-v="married" class="on">已婚</button>
+            <button type="button" data-v="single">未婚</button>
+            <button type="button" data-v="divorced">离异</button>
+            <button type="button" data-v="widowed">丧偶</button>
+          </div>
+        </div>
+
+        <div class="q-field">
+          <label><span class="q-no">3</span>是否有同行人</label>
+          <div class="seg" id="segCompanion">
+            <button type="button" data-v="yes">有同行人</button>
+            <button type="button" data-v="no" class="on">无同行人</button>
+          </div>
+        </div>
+
+        <div class="q-field">
+          <label><span class="q-no">4</span>出生地</label>
+          <select id="birth">
+            <option value="other" selected disabled>请选择您的出生地</option>
+            <optgroup label="直辖市">
+              <option value="shanghai">上海</option>
+              <option value="other">北京</option>
+              <option value="other">天津</option>
+              <option value="other">重庆</option>
+            </optgroup>
+            <optgroup label="东北地区">
+              <option value="heilongjiang">黑龙江</option>
+              <option value="jilin">吉林</option>
+              <option value="liaoning">辽宁</option>
+            </optgroup>
+            <optgroup label="华北地区">
+              <option value="other">河北</option>
+              <option value="other">山西</option>
+              <option value="other">内蒙古</option>
+            </optgroup>
+            <optgroup label="华东地区">
+              <option value="other">江苏</option>
+              <option value="other">浙江</option>
+              <option value="other">安徽</option>
+              <option value="fujian">福建</option>
+              <option value="jiangxi">江西</option>
+              <option value="other">山东</option>
+              <option value="other">台湾</option>
+            </optgroup>
+            <optgroup label="华中地区">
+              <option value="other">河南</option>
+              <option value="other">湖北</option>
+              <option value="other">湖南</option>
+            </optgroup>
+            <optgroup label="华南地区">
+              <option value="other">广东</option>
+              <option value="other">广西</option>
+              <option value="hainan">海南</option>
+            </optgroup>
+            <optgroup label="西南地区">
+              <option value="other">四川</option>
+              <option value="other">贵州</option>
+              <option value="other">云南</option>
+              <option value="other">西藏</option>
+            </optgroup>
+            <optgroup label="西北地区">
+              <option value="other">陕西</option>
+              <option value="other">甘肃</option>
+              <option value="qinghai">青海</option>
+              <option value="other">宁夏</option>
+              <option value="other">新疆</option>
+            </optgroup>
+          </select>
+          <div class="birth-warn">⚠️ <b>请确认长期生活地为中国内地：</b>签证须在长期生活地所属领区递交；若您目前长期生活在国外，<b>不能在国内申请签证</b>，强行递交将有<b>拒签风险</b>，请先联系我们确认申请方案。</div>
+        </div>
+
+        <div class="q-field">
+          <label><span class="q-no">5</span>出境记录（护照上的旅行履历）</label>
+          <div class="opt-cards" id="recordCards">
+            <div class="oc" data-v="excellent">
+              <div class="ot">🌟 优秀</div>
+              <div class="od">曾获得澳洲签证，或去过 3 次以上发达国家</div>
+            </div>
+            <div class="oc" data-v="good">
+              <div class="ot">👍 良好</div>
+              <div class="od">去过 1–2 次发达国家（日本/新加坡/美加/欧洲等）</div>
+            </div>
+            <div class="oc" data-v="average">
+              <div class="ot">🌏 一般</div>
+              <div class="od">只去过东南亚等亚洲国家</div>
+            </div>
+            <div class="oc" data-v="none">
+              <div class="ot">📄 无记录</div>
+              <div class="od">白本护照，或情况未知</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q-field">
+          <label><span class="q-no">6</span>职业类型</label>
+          <div class="opt-cards" id="occCards">
+            <div class="oc" data-v="stable">
+              <div class="ot">🏫 稳定职业</div>
+              <div class="od">教师 / 高管 / 医生护士 / 财务 / 公务员 / 退休等</div>
+            </div>
+            <div class="oc" data-v="salaried">
+              <div class="ot">🏢 受薪职业</div>
+              <div class="od">企业职员 / 经理主管 / 工程师 / 技术人员等</div>
+            </div>
+            <div class="oc" data-v="flexible">
+              <div class="ot">🧑‍💻 灵活就业</div>
+              <div class="od">自雇个体 / 自由职业 / 学生 / 无业等</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q-field" style="margin-bottom:4px">
+          <label><span class="q-no">7</span>资产水平<span style="font-weight:400;font-size:11.5px;color:var(--muted)">（银行卡余额 + 定期存款合计）</span></label>
+          <div class="opt-cards" id="assetCards">
+            <div class="oc" data-v="a3">
+              <div class="ot">💎 50 万以上</div>
+              <div class="od">资产雄厚，支付能力无忧</div>
+            </div>
+            <div class="oc" data-v="a2">
+              <div class="ot">💰 10–50 万</div>
+              <div class="od">较为充裕，满足常见水平</div>
+            </div>
+            <div class="oc" data-v="a1">
+              <div class="ot">💵 5–10 万</div>
+              <div class="od">基本达到流水要求线</div>
+            </div>
+            <div class="oc" data-v="a0">
+              <div class="ot">🪙 5 万以下</div>
+              <div class="od">低于常见资金要求线</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 结果面板 -->
+      <div>
+        <div class="card result-card">
+          <h2>🎯 自测结果</h2>
+          <p class="lead">完成左侧选择后自动更新</p>
+
+          <div class="ring-wrap">
+            <div class="ring-box">
+              <svg viewBox="0 0 120 120">
+                <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+                <circle class="ring-val" id="ringVal" cx="60" cy="60" r="52"
+                  stroke-dasharray="326.7" stroke-dashoffset="326.7"></circle>
+              </svg>
+              <div class="ring-center">
+                <div class="rc-num" id="rcNum">—</div>
+                <div class="rc-cap">综合评分 / 10</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="band-line">
+            <span class="band-badge band-wait" id="bandBadge">待完成选择</span>
+          </div>
+          <div class="band-desc" id="bandDesc">请完成「出境记录」「职业类型」「资产水平」三项选择，即可查看评估结果。</div>
+          <div class="region-warn" id="regionWarn" style="display:none"></div>
+
+          <div class="dims" id="dims" style="display:none">
+            <div class="dim"><span class="name">经济能力</span><div class="bar"><div class="fill" id="dAsset"></div></div><span class="val" id="vAsset"></span></div>
+            <div class="dim"><span class="name">出境记录</span><div class="bar"><div class="fill" id="dRec"></div></div><span class="val" id="vRec"></span></div>
+            <div class="dim"><span class="name">职业属性</span><div class="bar"><div class="fill" id="dOcc"></div></div><span class="val" id="vOcc"></span></div>
+            <div class="dim"><span class="name">出行目的</span><div class="bar"><div class="fill" id="dPur"></div></div><span class="val" id="vPur"></span></div>
+            <div class="dim"><span class="name">回国约束力</span><div class="bar"><div class="fill" id="dTie"></div></div><span class="val" id="vTie"></span></div>
+          </div>
+
+          <div class="tips" id="tips" style="display:none">
+            <h3>💡 给您的建议</h3>
+            <ul id="tipList"></ul>
+          </div>
+
+          <button class="go-docs" type="button" id="goDocs" style="display:none">📋 对照材料清单开始准备</button>
+          <div class="quiz-note">评估基于 100 例真实签证案例的统计规律，仅供参考，不构成出签承诺。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= Tab 2 签证简介 ================= -->
+  <section class="panel" id="panel-intro">
+    <div class="card">
+      <h2>🛂 什么是澳大利亚访客签证（600 类别）</h2>
+      <p class="lead">中国公民赴澳旅游、探亲访友或短期商务访问，最常申请的就是 600 类别访客签证（Visitor Visa）。</p>
+      <div class="intro-grid">
+        <div class="fact">
+          <div class="f-t">💻 电子签证，无需邮寄护照</div>
+          <div class="f-d">全程在线递交，出签后获得签证批准信，签证与护照号关联，凭护照直接出行</div>
+        </div>
+        <div class="fact">
+          <div class="f-t">📅 有效期最长 3 年多次往返</div>
+          <div class="f-d">3 年多次旅游签证需经领馆指定旅行社递交；常规自行递交通常获批 1 年多次，视申请人情况也可能获批单次签证（以领馆批文为准）</div>
+        </div>
+        <div class="fact">
+          <div class="f-t">🏖 每次停留最长 3 个月</div>
+          <div class="f-d">单次入境停留期以获批信上注明的为准，旅游类通常为 3 个月</div>
+        </div>
+        <div class="fact">
+          <div class="f-t">⏱ 办理时长通常 5–10 个工作日</div>
+          <div class="f-d">旺季审核可能延长至 20–30 个工作日，建议提前 1–2 个月规划更从容</div>
+        </div>
+        <div class="fact">
+          <div class="f-t">🩺 75 周岁以上特别要求</div>
+          <div class="f-d">通常需要体检，并自行购买符合要求的旅行保险（详见材料清单）</div>
+        </div>
+        <div class="fact">
+          <div class="f-t">🇳🇿 澳新联游</div>
+          <div class="f-d">澳新分别需要各自的签证/许可；从澳洲前往新西兰现可凭 ETA 出行（政策期至 2026.11）</div>
+        </div>
+        <div class="fact" style="grid-column:1/-1">
+          <div class="f-t">💰 签证费每年 7 月调整</div>
+          <div class="f-d">每年 7 月是澳大利亚新财政年的开始，签证费通常会调整上涨；规划行程时请将费用变动纳入考虑，也可赶在调价前递交申请</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🎯 三种出行目的，您是哪一种？</h2>
+      <p class="lead">出行目的直接影响材料要求与审理侧重，请对号入座。</p>
+      <div class="purpose-cards">
+        <div class="pcard">
+          <div class="p-emoji">✈️</div>
+          <b>旅游度假</b>
+          <p>观光、度假、休闲出行。准备机票酒店预订单与简要行程即可，是材料最简单的一类。</p>
+          <span class="note note-ok">历史出签率最高</span>
+        </div>
+        <div class="pcard">
+          <div class="p-emoji">👨‍👩‍👧</div>
+          <b>探亲访友</b>
+          <p>探望在澳亲属或朋友。需邀请信、邀请人护照及签证页等关系证明材料。如有直系亲属定居澳洲，务必按「探亲」类型申请。</p>
+          <span class="note note-warn">直系亲属在澳须办探亲，误办旅游有拒签风险</span>
+        </div>
+        <div class="pcard">
+          <div class="p-emoji">💼</div>
+          <b>商务访问</b>
+          <p>会议、洽谈、考察等短期商务活动。需盖章邀请函与公司派遣函，材料要求最严格。</p>
+          <span class="note note-warn">建议提前咨询专业顾问</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💬 常见问题</h2>
+      <p class="lead">客户最常问的 5 个问题，一次说清。</p>
+      <details open>
+        <summary>❓ 需要邮寄护照原件吗？<span class="arr">▼</span></summary>
+        <div class="faq-body">不需要。澳大利亚签证为电子签证，出签后您会收到签证批准信（Visa Grant Notice），签证信息与护照号码在线关联，出行时携带护照即可。</div>
+      </details>
+      <details>
+        <summary>❓ 白本护照（没有出境记录）可以申请吗？<span class="arr">▼</span></summary>
+        <div class="faq-body">可以申请，但出境记录会影响签证官对旅行可信度的判断。建议先用本页的「风险自测」评估一下，如评分不理想，可以先安排 1–2 次日本、新加坡等发达国家旅行积累记录后再申请，把握会明显提升。</div>
+      </details>
+      <details>
+        <summary>❓ 以前被拒签过，还能再申请吗？<span class="arr">▼</span></summary>
+        <div class="faq-body">可以再申请，但<b>必须如实提供拒签说明信</b>（写明申请时间、签证类别、拒签理由并亲笔签名）。隐瞒拒签史一旦被发现，几乎必然再次拒签。</div>
+      </details>
+      <details>
+        <summary>❓ 多大年龄需要买保险？<span class="arr">▼</span></summary>
+        <div class="faq-body">75 周岁以上申请澳大利亚签证需自行购买保险：①目的地包含澳洲（全球保险也可）；②医疗保额 50 万元以上；③保险日期需覆盖或大于实际出行日期，并与机票日期保持一致。</div>
+      </details>
+      <details>
+        <summary>❓ 澳大利亚 + 新西兰能一起玩吗？<span class="arr">▼</span></summary>
+        <div class="faq-body">可以，澳新联游非常受欢迎。两国分别需要各自的签证/许可；根据最新政策，从澳洲前往新西兰现可凭 ETA（电子旅行许可）出行（政策期至 2026 年 11 月）。具体适用条件欢迎联系我们确认。</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ================= Tab 3 材料清单 ================= -->
+  <section class="panel" id="panel-docs">
+    <div class="doc-progress">
+      <div class="dp-row">
+        <span>📋 我的备料进度</span>
+        <span class="count" id="dpCount">已备 0 / 0 项</span>
+      </div>
+      <div class="dp-bar"><div class="dp-fill" id="dpFill"></div></div>
+      <div class="dp-hint">点击材料卡片即可打勾记录，进度保存在您的手机/电脑上，方便随时对照准备（办理所需材料以实际受理为准）。</div>
+    </div>
+
+    <details class="doc-group" open>
+      <summary>📁 一、个人资料（所有人必备）<span class="cnt" id="cnt1"></span><span class="arr">▼</span></summary>
+      <div class="doc-list">
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>护照</b><span>本人有效护照（有效期半年以上）及旧护照（如有）</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>照片<span class="badge-mini bm-nz">仅新西兰需提供</span></b><span>彩色 2 寸白底电子版证件照；办理新西兰签证的照片不能佩戴眼镜</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>个人资料表<span class="badge-mini bm-need">可下载填写</span></b><span>家庭成员（姓名、出生年月日、详细地址等）信息必须完整，已故亲属也需提供姓名及出生年月日并标明已故</span>
+            <span class="doc-actions">
+              <!-- 金数据在线填写（待授权 forms 权限后创建表单填入链接）：
+              <a class="doc-btn primary" href="https://jinshuju.net/f/XXXX" target="_blank" rel="noopener">✍️ 在线填写（推荐）</a> -->
+              <a class="doc-btn primary" href="au-nz-visa-application-form.doc" download>📄 下载申请表模板（Word）</a>
+            </span>
+          </div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>身份证</b><span>正反面扫描件</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>结婚证 / 离婚证</b><span>扫描件（如有）</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>户口本</b><span>整本扫描件，扫描至第一页空白页</span></div></label>
+      </div>
+    </details>
+
+    <details class="doc-group">
+      <summary>💰 二、资金证明（所有人必备）<span class="cnt" id="cnt2"></span><span class="arr">▼</span></summary>
+      <div class="doc-list">
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>银行流水（近 6 个月）</b><span>本人银行卡流水，余额不少于 5 万/人（建议提供工资或退休金流水）；如余额不足，请额外提供存款、理财、股票等有效资产证明</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>其他资产证明<span class="badge-mini bm-opt">如有请提供</span></b><span>房产证复印件、车辆行驶证复印件等</span></div></label>
+      </div>
+    </details>
+
+    <details class="doc-group">
+      <summary>💼 三、工作证明（按身份对号入座）<span class="cnt" id="cnt3"></span><span class="arr">▼</span></summary>
+      <div class="doc-list">
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>在职人员：营业执照复印件</b><span>在职人员及私营业主需提供公司营业执照复印件加盖公章；事业单位请提供机构代码证加盖公章</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>在职人员：单位准假信（中英文版）</b><span>需列明：①职位和薪资；②在职时间；③批准休假；④签发准假信人员姓名和联系方式；领导签名并加盖公章</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>在职人员：社保缴费凭证</b><span>社会保险缴费凭证电子件</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>在职人员：个人完税证明</b><span>近一年的个人所得完税证明电子件</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>退休人员：退休证</b><span>退休人员提供退休证</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>在读学生：在读证明等</b><span>出生证、学生证或在读证明（抬头纸+盖公章）；应届毕业生请提供毕业证书复印件或入学通知书复印件</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>自由职业：情况说明</b><span>说明经济来源，并提交相应经济来源证明材料</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>无业人员：情况说明</b><span>说明经济来源，并提交经济来源证明材料</span></div></label>
+      </div>
+    </details>
+
+    <details class="doc-group">
+      <summary>✈️ 四、行程证明（按出行目的）<span class="cnt" id="cnt4"></span><span class="arr">▼</span></summary>
+      <div class="doc-list">
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>旅游：行程单据</b><span>机票预订单、酒店预订单、简要行程（如有）</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>探亲：邀请信</b><span>亲笔邀请信（含关系、访问时间段、澳洲地址、邮编、澳洲联系电话、亲笔签字）</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>探亲：邀请方资料</b><span>亲友的护照首页、澳洲有效签证页；被访问者是学生的，提供学生证、入学邀请</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>商务：邀请信</b><span>详细说明访问目的，包括邀请方的联系方式</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>商务：派遣函</b><span>派遣公司出具的批准信，详细说明申请人在澳期间的职责</span></div></label>
+      </div>
+    </details>
+
+    <details class="doc-group">
+      <summary>⚠️ 五、特殊情况（如适用）<span class="cnt" id="cnt5"></span><span class="arr">▼</span></summary>
+      <div class="doc-list">
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>有澳洲拒签史：拒签说明信<span class="badge-mini bm-need">必须提供</span></b><span>写明申请时间、签证类别、拒签理由等，并亲笔签名。若有隐瞒而最终导致拒签，责任自负</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>未成年人（未满 18 周岁）：父母资料</b><span>父母双方身份证、结婚证/离婚证（无论父母是否一起同行）</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>未成年人：不随行父母同意函</b><span>不随行父母书面授权中英文版委托书；出生证明复印件</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>未成年人（澳签专用表格）</b><span>①一方带小孩出行，另一方需填写 1229 表格及委托书；②小孩由父母、法定监护人或亲属以外的人照顾，需签署 1257 表格</span></div></label>
+        <label class="doc-item"><input type="checkbox" data-doc><span class="box">✓</span>
+          <div class="doc-text"><b>75 周岁以上（澳签）：保险<span class="badge-mini bm-need">必须购买</span></b><span>自行购买保险，注意：①目的地包含澳洲（全球保险也可）；②医疗保额大于 50 万元；③保险日期覆盖或大于实际出行日期，出行时与机票日期保持一致</span></div></label>
+      </div>
+    </details>
+
+    <div class="card" style="margin-top:16px">
+      <div class="notice notice-red">⚠️ <b>特别告知：</b>是否给予签证是目的地国家的主权，发生拒签时并不一定说明理由。旅行社对送签结果不做承诺。</div>
+      <div class="notice notice-blue" style="margin-top:10px">💡 以上清单适用于个人旅游、探亲、商务签证，全部材料仅需提供<b>扫描件</b>。清单更新于 2026 年 7 月，如有变动请以最新受理要求为准。</div>
+    </div>
+  </section>
+
+  <!-- ================= Tab 4 出签贴士 ================= -->
+  <section class="panel" id="panel-tips">
+
+    <!-- 置顶红色警戒卡：未成年人领馆致电警示 -->
+    <div class="alert-card">
+      <div class="icon">📞</div>
+      <div>
+        <b>特别提醒：未成年人出行，领馆会致电「不同行的父母」</b>
+        <p>如未成年孩子仅与父母一方（或亲属、老师等其他人）出行，领馆会电话联系<b>不同行的父母</b>核实出行意愿与监护安排。<b>若没有接到电话或拒接电话，签证将被拒签。</b>请务必提醒不同行的父母：① 提前知晓并同意本次出行计划；② 签证审核期间保持手机畅通；③ 不要挂断、拦截陌生来电（可能为境外或座机号码）。</p>
+      </div>
+    </div>
+
+    <!-- 澳新高效出签注意事项 -->
+    <div class="card">
+      <h2>📌 澳新高效出签注意事项</h2>
+      <p class="lead">以下 5 条经验来自大量真实送签案例，澳大利亚与新西兰签证审理思路高度一致，可交叉参考。</p>
+
+      <div class="tip-entry">
+        <div class="te-no">1</div>
+        <div class="te-body">
+          <b>📞 无需面试，但务必保持电话畅通</b>
+          <span>澳大利亚与新西兰签证<b>无需面试</b>，准备齐全资料送签即可。但领馆通常会<b>打电话给本人或公司进行实况调查</b>，以核实相关信息的真实性——请随时保持电话通畅，同时提醒相关人员（如公司人事、家人）注意接听电话。</span>
+        </div>
+      </div>
+
+      <div class="tip-entry">
+        <div class="te-no">2</div>
+        <div class="te-body">
+          <b>📄 全部资料扫描，无需邮寄原件</b>
+          <span>全部资料只需提供<b>清晰扫描件</b>。特别提醒：<b>75 岁以上</b>的申请人递交资料给使馆后，将被要求在使馆<b>指定的医院进行体检</b>，体检合格后再由使馆通知<b>购买保险</b>，请预留充足时间。</span>
+        </div>
+      </div>
+
+      <div class="tip-entry">
+        <div class="te-no">3</div>
+        <div class="te-body">
+          <b>🛂 看重出入境记录，旧护照别漏交</b>
+          <span>澳大利亚和新西兰同属英联邦国家，<b>比较看重出入境记录</b>。如有旧护照，<b>签证页和出入境盖章页都要扫描</b>一并提供——良好的出行记录是重要的加分项。</span>
+        </div>
+      </div>
+
+      <div class="tip-entry">
+        <div class="te-no">4</div>
+        <div class="te-body">
+          <b>💰 流水账单是电话调查的重点</b>
+          <span>领馆经常电话调查，<b>看重流水账单与实际收入是否相符</b>：建议提供显示<b>工资收入</b>的流水账单；若实际收入与账单不一致，请<b>附情况解释信</b>说明；申请多年多次签证，务必保证资料表所填信息与实际情况一致。流水余额建议 <b>5 万以上/人</b>——如一家三口出游，建议余额 <b>15 万以上</b>，可有效提升出签率。</span>
+        </div>
+      </div>
+
+      <div class="tip-entry">
+        <div class="te-no">5</div>
+        <div class="te-body">
+          <b>📝 随行同意书：父母不随行必须提供</b>
+          <span>父母一方或双方不随行的，<b>必须出示不随行同意书</b>；即使父母离异，也需<b>亲生父母签名同意</b>；同行父母已办好签证的，小孩申请时同样必须提供不随行同意书。对应表格：一方带娃出行，另一方需填 <b>1229 表</b>及委托书；孩子由父母、法定监护人以外的人照顾，需签署 <b>1257 表</b>（详见材料清单「五、特殊情况」）。</span>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- 拒签红旗自检（不计分，来自真实拒签案例与领馆审理要点） -->
+    <div class="card">
+      <h2>🚩 拒签红旗自检</h2>
+      <p class="lead">以下 8 种情形来自真实拒签案例与领馆审理要点。红旗项<b>不计入风险自测评分</b>，但任何一条都可能单独导致拒签——请勾选您实际存在的情况，查看针对性建议。</p>
+      <div class="rf-list">
+        <label class="rf-item"><input type="checkbox" id="rf1" data-rf data-title="临时大额转入"><span class="rf-box">!</span>
+          <div class="rf-t"><b>💸 近 6 个月流水中有临时大额转入，且难以说明来源</b><span>签证官最警惕"临申凑钱"：申请前突然存入的整笔资金，无法证明来源与归属，是资金类拒签的第一大原因</span></div></label>
+        <label class="rf-item"><input type="checkbox" id="rf2" data-rf data-title="收入口径不一致"><span class="rf-box">!</span>
+          <div class="rf-t"><b>📄 申报的收入与银行流水实际入账对不上</b><span>在职证明、税单、申请表上的收入数字，须与流水中的工资入账相互印证——口径不一致是电调后拒签的高频原因</span></div></label>
+        <label class="rf-item"><input type="checkbox" id="rf3" data-rf data-title="拒签史/滞留记录"><span class="rf-box">!</span>
+          <div class="rf-t"><b>🚫 曾被任何国家拒签，或有逾期滞留等记录（含未申报）</b><span>英联邦国家签证系统互通，隐瞒拒签史一旦被发现将触发诚信条款（PIC 4020），可能导致 3 年禁申</span></div></label>
+        <label class="rf-item"><input type="checkbox" id="rf4" data-rf data-title="在澳伴侣/等待永居"><span class="rf-box">!</span>
+          <div class="rf-t"><b>💑 在澳洲有伴侣（男女朋友/未婚夫妻），或正在等待澳洲永居类签证</b><span>签证官会怀疑您"借旅游之名滞留转身份"（600.211 条款重点审查情形），需专业说明信与完整行程规划</span></div></label>
+        <label class="rf-item"><input type="checkbox" id="rf5" data-rf data-title="行程模糊/未定"><span class="rf-box">!</span>
+          <div class="rf-t"><b>🗓 行程尚未确定，或只有"去旅游"这类模糊计划</b><span>真实拒签信中，行程写"待定"或 7 天横跨东西海岸的行程，都会被认定访问目的不真实</span></div></label>
+        <label class="rf-item"><input type="checkbox" id="rf6" data-rf data-title="电调准备不足"><span class="rf-box">!</span>
+          <div class="rf-t"><b>☎️ 单位前台/人事或家人不了解本次出行，电话可能无人接听</b><span>约 20% 的申请人会接到领馆电调（本人/单位/邀请人）：漏接、答不上来或口径不一，都会直接影响结果</span></div></label>
+        <label class="rf-item"><input type="checkbox" id="rf7" data-rf data-title="收入偏低"><span class="rf-box">!</span>
+          <div class="rf-t"><b>💰 本人月收入低于约 1 万元人民币</b><span>收入过低时签证官会质疑"旅费不真实可行"（官方表述：经济状况不显著），需要更强的回国约束力或邀请方资助证明</span></div></label>
+        <label class="rf-item"><input type="checkbox" id="rf8" data-rf data-title="带娃且条件偏弱"><span class="rf-box">!</span>
+          <div class="rf-t"><b>👶 带未成年子女同行，但家长自身条件偏弱</b><span>孩子的申请与家长绑定审理：家长被拒，孩子连带被拒并留下拒签记录——建议家长先做足准备再一起递交</span></div></label>
+      </div>
+      <div class="rf-result" id="rfResult"></div>
+    </div>
+
+    <!-- 递交前自查清单 -->
+    <div class="card">
+      <h3>✅ 递交前自查清单</h3>
+      <p class="lead">对照以下 8 项逐条确认，可避免因细节疏忽影响出签。</p>
+      <ul class="check-list">
+        <li><span class="ck">✓</span><span>申请表所填信息（工作、收入、行程）与所有材料完全一致，无相互矛盾</span></li>
+        <li><span class="ck">✓</span><span>流水余额 ≥ 5 万/人（一家三口建议 ≥ 15 万），账单能体现工资收入</span></li>
+        <li><span class="ck">✓</span><span>实际收入与流水不一致的地方，已附情况解释信</span></li>
+        <li><span class="ck">✓</span><span>旧护照的签证页 + 出入境盖章页已全部扫描提供</span></li>
+        <li><span class="ck">✓</span><span>本人手机保持畅通，已提醒公司人事 / 家人注意接听领馆来电</span></li>
+        <li><span class="ck">✓</span><span>未成年人出行：不随行同意书已签字，不同行的父母已知悉并保持电话畅通</span></li>
+        <li><span class="ck">✓</span><span>75 岁以上申请人已预留体检与购买保险的时间</span></li>
+        <li><span class="ck">✓</span><span>全部材料为清晰扫描件，无缺页、漏页、遮挡</span></li>
+      </ul>
+      <div class="notice notice-blue" style="margin-top:14px">📌 以上注意事项同样适用于<b>新西兰签证</b>——澳新两国签证要求高度相似，可交叉参考；具体以各使馆最新受理要求为准。</div>
+    </div>
+
+    <!-- 官方拒签数据与拒签后果 -->
+    <div class="card">
+      <h2>📊 拒签数据与拒签后果（官方口径）</h2>
+      <p class="lead">绝大多数澳洲 600 拒签都指向同一个法律条款——<b>600.211「真实临时入境」</b>：签证官必须相信您会在签证到期时离境。以下数据来自澳大利亚内政部公布信息。</p>
+      <div class="intro-grid">
+        <div class="fact">
+          <div class="f-t">📉 中国籍 600 平均拒签率约 14.6%</div>
+          <div class="f-d">内政部 2022.10–2023.5 审理数据；近年稳中有升，2025 年末季度中国籍旅游访客获批率约 87.4%</div>
+        </div>
+        <div class="fact">
+          <div class="f-t">🗺 官方口径：高拒签率省份前五</div>
+          <div class="f-d">青海 26% · 吉林 25.8% · 海南 25.2% · 福建 22.4% · 江西 21.1%——户籍不是决定因素，但这些地区申请建议把材料准备得更扎实</div>
+        </div>
+        <div class="fact">
+          <div class="f-t">🧾 拒签的第一代价：费用不退</div>
+          <div class="f-d">签证申请费一经审理不予退还；且此后每次递交任何澳洲签证，都必须如实申报这次拒签记录</div>
+        </div>
+        <div class="fact">
+          <div class="f-t">⛔ 材料造假的代价最大</div>
+          <div class="f-d">虚假流水、伪造在职证明、隐瞒拒签史等触发 PIC 4020 诚信条款：本次拒签 + 未来 3 年内禁止再申请</div>
+        </div>
+        <div class="fact">
+          <div class="f-t">👶 未成年子女连带被拒</div>
+          <div class="f-d">孩子的申请与家长绑定审理：家长被拒，子女申请连带被拒，孩子也会留下拒签记录并损失申请费</div>
+        </div>
+        <div class="fact">
+          <div class="f-t">⏰ 小心"程序性拒签"</div>
+          <div class="f-d">收到补料通知须在 28 天内回应、生物识别采集通常须 14 天内完成——错过期限直接拒签，材料再好也不会看</div>
+        </div>
+      </div>
+      <div class="notice notice-blue" style="margin-top:14px">📉 <b>若曾被拒签：</b>建议间隔 1–3 个月再递交，且必须针对上次拒签原因补强材料——原样重交大概率再次被拒。拿不准时先联系我们做拒签原因分析与再申请规划。</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <!-- 品牌占位：可在此处添加您的品牌名、二维码或联系方式 -->
+  <div class="motto">让每一次出发，都有备而来。</div>
+  <div>澳大利亚签证指南 · 材料清单与风险自测</div>
+  <div class="small">材料清单依据 2026.07 最新整理 · 评估模型基于 100 例真实案例（2024.12–2025.09）统计规律</div>
+  <div class="small">签证结果最终以使馆 / 签证官审批为准，本页面信息仅供参考，不构成法律意见或出签保证</div>
+</footer>
+
+<script>
+/* ================= Tabs ================= */
+function switchTab(name){
+  document.querySelectorAll('.tab-btn').forEach(function(b){
+    b.classList.toggle('on', b.getAttribute('data-tab') === name);
+  });
+  document.querySelectorAll('.panel').forEach(function(p){
+    p.classList.toggle('on', p.id === 'panel-' + name);
+  });
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+document.querySelectorAll('.tab-btn').forEach(function(b){
+  b.addEventListener('click', function(){ switchTab(b.getAttribute('data-tab')); });
+});
+document.querySelectorAll('.hero-chips .chip').forEach(function(c){
+  c.addEventListener('click', function(){ switchTab(c.getAttribute('data-goto')); });
+});
+
+/* ================= 材料清单打勾进度 ================= */
+var STORE_KEY = 'au-visa-docs-check-v1';
+var saved = {};
+try { saved = JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); } catch(e){ saved = {}; }
+
+var boxes = document.querySelectorAll('input[data-doc]');
+boxes.forEach(function(box, i){
+  box.setAttribute('data-idx', i);
+  if (saved[i]){ box.checked = true; }
+  box.addEventListener('change', function(){
+    saved[i] = box.checked;
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(saved)); } catch(e){}
+    updateProgress();
+  });
+});
+function updateProgress(){
+  var total = boxes.length, done = 0;
+  boxes.forEach(function(b){ if (b.checked) done++; });
+  document.getElementById('dpCount').textContent = '已备 ' + done + ' / ' + total + ' 项';
+  document.getElementById('dpFill').style.width = (total ? done / total * 100 : 0) + '%';
+  /* 每组小计 */
+  [1,2,3,4,5].forEach(function(g){
+    var group = document.getElementById('cnt' + g);
+    if (!group) return;
+    var list = group.closest('details').querySelectorAll('input[data-doc]');
+    var d = 0; list.forEach(function(b){ if (b.checked) d++; });
+    group.textContent = list.length ? '(' + d + '/' + list.length + ')' : '';
+  });
+}
+updateProgress();
+
+/* ================= 风险自测引擎 =================
+   评分口径与 100 例真实案例验证一致：
+   资产：≥50万+3 / 10–50万+2 / 5–10万+1 / <5万 0
+   出境记录：优秀+2 / 良好+1 / 一般 0 / 无记录 0
+   职业：稳定+2 / 受薪+1 / 灵活 0
+   目的：旅游/探亲+1 / 商务 -1
+   回国约束力：已婚或有同行人+1；上海+1；黑吉辽-1；下限-1
+   判定：≥6 绿 / 4–5 黄 / ≤3 红 */
+var state = {
+  purpose:'tour', marriage:'single', companion:'no', birth:'other',
+  record:null, occupation:null, asset:null
+};
+var REC_SCORE = {excellent:2, good:1, average:0, none:0};
+var OCC_SCORE = {stable:2, salaried:1, flexible:0};
+var ASSET_SCORE = {a3:3, a2:2, a1:1, a0:0};
+
+function compute(){
+  var sRec = state.record ? REC_SCORE[state.record] : null;
+  var sOcc = state.occupation ? OCC_SCORE[state.occupation] : null;
+  var sAsset = state.asset !== null ? ASSET_SCORE[state.asset] : null;
+  var sPur = state.purpose === 'business' ? -1 : 1;
+  var base = (state.marriage === 'married' || state.companion === 'yes') ? 1 : 0;
+  var region = 0;
+  if (state.birth === 'shanghai') region = 1;
+  else if (state.birth === 'heilongjiang' || state.birth === 'jilin' || state.birth === 'liaoning') region = -1;
+  var sTie = Math.max(base + region, -1);
+  var ready = sRec !== null && sOcc !== null && sAsset !== null;
+  return {
+    sAsset:sAsset, sRec:sRec, sOcc:sOcc, sPur:sPur, sTie:sTie,
+    total: ready ? sAsset + sRec + sOcc + sPur + sTie : null
+  };
+}
+function bandOf(t){ return t >= 6 ? 'green' : (t >= 4 ? 'yellow' : 'red'); }
+
+/* 客户友好版建议 */
+function buildTips(r){
+  var tips = [];
+  if (state.purpose === 'business'){
+    tips.push(['red','💼 商务访问请务必备齐材料','商务签证对材料严谨性要求最高：盖章邀请函、公司派遣函、往返行程单缺一不可，材料不齐建议暂缓递交。']);
+  }
+  if (state.asset === 'a0'){
+    tips.push(['red','🪙 资金证明是核心门槛','办签要求银行流水余额不少于 5 万/人。建议先充实账户余额与稳定流水（近 3–6 个月），避免临近申请突击转入大额资金。']);
+  } else if (state.asset === 'a1'){
+    tips.push(['yellow','💵 资金水平刚过线','建议以「日常流水 + 定期存款」组合呈现，若能将总资产提升至 10 万以上，把握会更稳。']);
+  }
+  if (state.record === 'none'){
+    tips.push(['yellow','📄 暂无出境记录','可以先安排 1–2 次日本、新加坡等发达国家旅行：履历从「无记录」升到「良好」，是成本最低、效果最明显的提升方式。']);
+  } else if (state.record === 'average'){
+    tips.push(['yellow','🌏 出境记录还有提升空间','如时间允许，先去一趟日本、新加坡等发达国家再申请澳签，旅行履历会更受认可。']);
+  }
+  if (state.occupation === 'flexible'){
+    tips.push(['yellow','🧑‍💻 补强职业约束材料','自由职业/自雇/学生等身份，建议准备好营业执照、纳税记录、稳定收入证明等，让签证官看到您在国内有稳定的事业或学业纽带。']);
+  }
+  if (state.birth === 'heilongjiang' || state.birth === 'jilin' || state.birth === 'liaoning'){
+    tips.push(['yellow','🧭 用综合条件弥补地域影响','东北地区申请并非不行，建议用更充裕的资产、同行人、良好的出境记录来提升整体评分。']);
+  }
+  if (state.marriage !== 'married' && state.companion === 'no'){
+    tips.push(['yellow','🏠 回国约束力可以更扎实','未婚/离异/丧偶且独自出行时，建议与家人朋友同行，或补充房产证明、长期在职证明等国内约束材料。']);
+  }
+  if (state.purpose === 'visit' && state.companion === 'no'){
+    tips.push(['yellow','👵 探亲出行建议结伴','高龄客户独自探亲是较常见的拒签场景，强烈建议家人陪同出行。']);
+  }
+  if (r.total !== null && r.total >= 6 && tips.length === 0){
+    tips.push(['green','🌟 综合条件不错','您的评分处于较有把握的区间。按材料清单备齐资料、保持流水稳定，就可以安排递交了。']);
+  }
+  if (r.total !== null && bandOf(r.total) !== 'green' && tips.length === 0){
+    tips.push(['yellow','📋 建议补强后再递交','当前评分处于中风险区间，参考材料清单补齐弱项后，申请把握会更大。']);
+  }
+  return tips;
+}
+
+/* ================= 渲染 ================= */
+function $(id){ return document.getElementById(id); }
+
+function render(){
+  var r = compute();
+  var ready = r.total !== null;
+  var badge = $('bandBadge'), desc = $('bandDesc');
+  $('dims').style.display = ready ? 'flex' : 'none';
+  $('tips').style.display = ready ? 'block' : 'none';
+  $('goDocs').style.display = ready ? 'block' : 'none';
+
+  /* 户籍地警示：官方 FOI 高拒签率省份（计分不变，仅提示） */
+  var RG = {fujian:['福建','22.4%'], jiangxi:['江西','21.1%'], hainan:['海南','25.2%'], qinghai:['青海','26.0%']};
+  var rw = $('regionWarn');
+  if (RG[state.birth]){
+    rw.innerHTML = '📊 <b>户籍地提示（官方数据）：</b>澳大利亚内政部统计显示，' + RG[state.birth][0] + '出生申请人的 600 类别拒签率约 <b>' + RG[state.birth][1] + '</b>，高于中国籍整体水平（约 14.6%）。户籍并非决定性因素，但建议把资金流水与回国约束力材料准备得更扎实，必要时先联系我们做递交前预审。';
+    rw.style.display = 'block';
+  } else {
+    rw.style.display = 'none';
+  }
+
+  var ring = $('ringVal'), num = $('rcNum');
+  var C = 326.7; /* 2*pi*52 */
+  if (!ready){
+    num.textContent = '—';
+    ring.style.strokeDashoffset = C;
+    ring.style.stroke = 'var(--primary)';
+    badge.className = 'band-badge band-wait';
+    badge.textContent = '待完成选择';
+    desc.textContent = '请完成「出境记录」「职业类型」「资产水平」三项选择，即可查看评估结果。';
+    return;
+  }
+
+  num.textContent = r.total;
+  var band = bandOf(r.total);
+  ring.style.strokeDashoffset = C * (1 - Math.max(Math.min(r.total,10),0) / 10);
+  ring.style.stroke = band === 'green' ? 'var(--green)' : band === 'yellow' ? 'var(--yellow)' : 'var(--red)';
+  num.style.color = band === 'green' ? 'var(--green)' : band === 'yellow' ? 'var(--yellow)' : 'var(--red)';
+
+  if (band === 'green'){
+    badge.className = 'band-badge band-green'; badge.textContent = '🟢 申请把握较高';
+    desc.textContent = '综合条件较有优势，可以按正常流程准备递交。';
+  } else if (band === 'yellow'){
+    badge.className = 'band-badge band-yellow'; badge.textContent = '🟡 有一定风险，建议补强';
+    desc.textContent = '存在部分风险点，参考下方建议补强后递交，把握更大。';
+  } else {
+    badge.className = 'band-badge band-red'; badge.textContent = '🔴 当前风险较高';
+    desc.textContent = '建议先补强弱项、或联系我们获取一对一申请方案后再递交。';
+  }
+
+  setDim('Asset', r.sAsset, 3); setDim('Rec', r.sRec, 2); setDim('Occ', r.sOcc, 2);
+  setDim('Pur', r.sPur, 1); setDim('Tie', r.sTie, 2);
+
+  var ul = $('tipList');
+  ul.innerHTML = '';
+  buildTips(r).forEach(function(t){
+    var li = document.createElement('li');
+    li.className = t[0] === 'red' ? 'tip-red' : t[0] === 'yellow' ? 'tip-yellow' : 'tip-green';
+    var b = document.createElement('b'); b.textContent = t[1];
+    var s = document.createElement('span'); s.textContent = t[2];
+    li.appendChild(b); li.appendChild(s);
+    ul.appendChild(li);
+  });
+}
+function setDim(key, score, max){
+  var fill = $('d' + key), val = $('v' + key);
+  if (score === null){ fill.style.width = '0%'; fill.classList.remove('neg'); val.textContent = '–'; return; }
+  if (score > 0){
+    fill.style.width = Math.max(score / max * 100, 10) + '%';
+    fill.classList.remove('neg');
+  } else if (score === 0){
+    fill.style.width = '0%'; fill.classList.remove('neg');
+  } else {
+    fill.style.width = Math.min(Math.abs(score) / max * 100, 100) + '%';
+    fill.classList.add('neg');
+  }
+  val.textContent = (score > 0 ? '+' : '') + score;
+  val.style.color = score < 0 ? 'var(--red)' : (score > 0 ? 'var(--primary)' : 'var(--muted)');
+}
+
+/* ================= 交互绑定 ================= */
+function bindSeg(id, key){
+  var box = $(id);
+  box.querySelectorAll('button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      box.querySelectorAll('button').forEach(function(b){ b.classList.remove('on'); });
+      btn.classList.add('on');
+      state[key] = btn.getAttribute('data-v');
+      render();
+    });
+  });
+}
+bindSeg('segPurpose', 'purpose');
+bindSeg('segMarriage', 'marriage');
+bindSeg('segCompanion', 'companion');
+$('birth').addEventListener('change', function(){ state.birth = this.value; render(); });
+
+function bindCards(id, key){
+  var box = $(id);
+  box.querySelectorAll('.oc').forEach(function(card){
+    card.addEventListener('click', function(){
+      box.querySelectorAll('.oc').forEach(function(c){ c.classList.remove('on'); });
+      card.classList.add('on');
+      state[key] = card.getAttribute('data-v');
+      render();
+      if (window.innerWidth < 860){
+        var rc = document.querySelector('.result-card');
+        if (rc) rc.scrollIntoView({behavior:'smooth', block:'nearest'});
+      }
+    });
+  });
+}
+bindCards('recordCards', 'record');
+bindCards('occCards', 'occupation');
+bindCards('assetCards', 'asset');
+
+$('goDocs').addEventListener('click', function(){ switchTab('docs'); });
+
+/* ================= 拒签红旗自检（不计分） ================= */
+var RF_ADVICE = {
+  rf1: '提前 3–6 个月准备银行流水，让余额自然沉淀；如确有转入，附上来源证明（理财赎回单、赠与说明、卖房合同等）并写情况说明信。',
+  rf2: '递交前把申请表、在职证明、税单、流水的收入数字逐一对齐——"多份独立文件讲同一个故事"是官方明示的审理标准。',
+  rf3: '务必如实申报全部拒签史与滞留记录（英联邦签证系统互通）；有历史记录不等于不能获签，但隐瞒被发现 = 3 年禁申。',
+  rf4: '建议先联系我们评估：需要专业的访问目的说明信、完整行程与更强的回国约束力证据，来打消签证官对"真实临时入境"的疑虑。',
+  rf5: '写清城市、天数、景点与住宿区域，并与机票、酒店预订单一致；参考材料清单"行程证明"分组逐项准备。',
+  rf6: '递交前告知单位前台/人事和家人：签证官可能致电本人、单位或同行人；同时熟记自己的行程、职位与收入口径。',
+  rf7: '低收入不是绝对障碍，但需更强的回国约束力（房产、家庭、社保）或由在澳邀请方出具资助证明，建议先咨询再递交。',
+  rf8: '家长先把自身材料做扎实（资金、约束力、行程），再带孩子一起递交；不同行的父母须提前知悉并保持电话畅通（见顶部红色提醒）。'
+};
+function updateFlags(){
+  var el = $('rfResult');
+  var checked = [];
+  document.querySelectorAll('[data-rf]').forEach(function(c){ if (c.checked) checked.push(c); });
+  if (!checked.length){
+    el.className = 'rf-result show ok';
+    el.innerHTML = '✅ <b>未发现高频拒签红旗。</b>以上情形均不涉及，可放心对照材料清单准备。如仍有疑虑，欢迎随时联系我们预审材料。';
+    return;
+  }
+  var html = '🚩 <b>检测到 ' + checked.length + ' 项高频拒签情形</b>——以下情形来自真实拒签案例与领馆审理要点，建议先联系我们评估，再决定是否递交：';
+  html += '<ul>';
+  checked.forEach(function(c){
+    html += '<li><b>' + c.getAttribute('data-title') + '</b><br>' + RF_ADVICE[c.id] + '</li>';
+  });
+  html += '</ul><div style="margin-top:9px;font-size:12px">⚠️ 红旗项不计入「风险自测」评分，但任何一项都可能单独导致拒签——"材料齐全"不等于"证据有力"。</div>';
+  el.className = 'rf-result show bad';
+  el.innerHTML = html;
+}
+document.querySelectorAll('[data-rf]').forEach(function(c){ c.addEventListener('change', updateFlags); });
+
+render();
+</script>
+</body>
+</html>
